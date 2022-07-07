@@ -48,6 +48,13 @@ app.get('/get-data', async (req, res) => {
     })
 })
 
+
+app.get('/get-data-check', async (req, res) => {
+    //let string = req.params['strings']
+    
+    res.send(`Express Demo`)
+})
+
 app.post('/get-string', async (req, res) => {
     //let string = req.params['strings']
     let string = req.body.strings
